@@ -39,7 +39,7 @@ body {
 .sidebar {
     width: 300px;
     background-color: var(--bg-primary);
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     border-right: 1px solid var(--border-light);
     position: fixed;
     height: 100vh;
@@ -48,7 +48,7 @@ body {
 
 .author-profile {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .author-avatar {
@@ -56,7 +56,7 @@ body {
     height: 175px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
     display: block;
     box-shadow: 0 2px 4px var(--shadow-light);
 }
@@ -64,14 +64,14 @@ body {
 .author-name {
     font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
 }
 
 .author-bio {
     font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.5;
 }
 
@@ -139,7 +139,7 @@ body {
 /* Main content */
 .main-content {
     margin-left: 300px;
-    padding: 2rem 3rem;
+    padding: 3rem 4rem;
     background-color: var(--bg-primary);
     min-height: 100vh;
     width: calc(100% - 300px);
@@ -159,39 +159,39 @@ body {
 h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--text-primary);
     border-bottom: 2px solid var(--border-light);
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 h2 {
     font-size: 1.6rem;
     font-weight: 600;
-    margin: 2rem 0 1rem 0;
+    margin: 3rem 0 1.5rem 0;
     color: var(--text-primary);
 }
 
 h3 {
     font-size: 1.3rem;
     font-weight: 600;
-    margin: 1.5rem 0 0.75rem 0;
+    margin: 2rem 0 1rem 0;
     color: var(--text-primary);
 }
 
 p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.7;
 }
 
 /* Profile section (home page) */
 .profile-header {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .profile-header h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border: none;
     padding: 0;
 }
@@ -199,7 +199,7 @@ p {
 .profile-subtitle {
     font-size: 1.3rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 400;
 }
 
@@ -212,8 +212,8 @@ p {
 /* Publications and Teaching lists */
 .publication-item,
 .teaching-item {
-    margin-bottom: 2.5rem;
-    padding: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
     border: 1px solid var(--border-light);
     border-radius: 8px;
     background-color: var(--bg-tertiary);
@@ -230,28 +230,29 @@ p {
 .course-title {
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
 }
 
 .publication-authors,
 .course-info {
     color: var(--text-secondary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-size: 0.95rem;
 }
 
 .publication-venue {
     font-style: italic;
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-size: 0.95rem;
 }
 
 .publication-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .publication-link {
@@ -272,7 +273,7 @@ p {
 /* Footer */
 .site-footer {
     margin-left: 300px;
-    padding: 1.5rem 3rem;
+    padding: 2rem 4rem;
     background-color: var(--bg-tertiary);
     border-top: 1px solid var(--border-light);
     color: var(--text-secondary);
@@ -290,7 +291,7 @@ p {
     .main-content,
     .site-footer {
         margin-left: 250px;
-        padding: 1.5rem 2rem;
+        padding: 2rem 2.5rem;
         width: calc(100% - 250px);
     }
 }

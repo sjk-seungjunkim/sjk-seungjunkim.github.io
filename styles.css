@@ -140,7 +140,7 @@ body {
 .main-content {
     margin-left: 300px;
     padding: 3rem 4rem;
-    background-color: var(--bg-secondary);
+    background-color: transparent;
     min-height: 100vh;
     width: calc(100% - 300px);
 }
@@ -148,6 +148,7 @@ body {
 .content-section {
     display: none;
     width: 100%;
+    background-color: var(--bg-primary); 
     max-width: 1100px;
     margin-right: auto;
 }

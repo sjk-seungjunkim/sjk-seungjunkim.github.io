@@ -32,70 +32,102 @@ body {
 /* Layout container */
 .page-wrapper {
     min-height: 100vh;
+    display: block;
+}
+
+/* Top Header */
+.top-header {
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-light);
+    padding: 1rem 3rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+.header-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
 }
 
 /* Sidebar */
 .sidebar {
-    width: 300px;
-    background-color: var(--bg-primary);
-    padding: 2.5rem 1.5rem;
-    border-right: 1px solid var(--border-light);
-    position: fixed;
-    height: 100vh;
-    overflow-y: auto;
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    overflow: visible;
 }
 
 .author-profile {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin: 120px auto 3rem;
+    max-width: 600px;
 }
 
 .author-avatar {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 2rem;
     display: block;
-    box-shadow: 0 2px 4px var(--shadow-light);
+    box-shadow: 0 4px 8px var(--shadow-light);
 }
 
 .author-name {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
 }
 
 .author-bio {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .author-links {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .author-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .author-links a {
     color: var(--text-light);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
-    padding: 0.25rem 0;
+    padding: 0.5rem 1rem;
     transition: var(--transition-smooth);
+    border-radius: 6px;
 }
 
 .author-links a:hover {
     color: var(--link-color);
+    background-color: var(--bg-tertiary);
 }
 
 .author-links i {
@@ -105,44 +137,47 @@ body {
 
 /* Navigation */
 .sidebar-nav {
-    border-top: 1px solid var(--border-light);
-    padding-top: 1.5rem;
+    border: none;
+    padding: 0;
 }
 
 .nav-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 2rem;
 }
 
 .nav-list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .nav-list a {
     color: var(--text-light);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0.5rem 0;
+    padding: 0.75rem 1.5rem;
     display: block;
     transition: var(--transition-smooth);
-    border-left: 3px solid transparent;
-    padding-left: 0.75rem;
+    border: none;
+    border-radius: 6px;
 }
 
 .nav-list a:hover,
 .nav-list a.active {
     color: var(--link-color);
-    border-left-color: var(--link-color);
+    background-color: var(--bg-tertiary);
 }
 
 /* Main content */
 .main-content {
-    margin-left: 300px;
+    margin-left: 0;
+    margin-top: 0;
     padding: 3rem 4rem;
     background-color: var(--bg-primary);
-    min-height: 100vh;
-    width: calc(100% - 300px);
+    min-height: calc(100vh - 70px);
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -275,14 +310,14 @@ p {
 
 /* Footer */
 .site-footer {
-    margin-left: 300px;
+    margin-left: 0;
     padding: 2rem 4rem;
     background-color: var(--bg-tertiary);
     border-top: 1px solid var(--border-light);
     color: var(--text-secondary);
     font-size: 0.9rem;
     text-align: center;
-    width: calc(100% - 300px);
+    width: 100%;
 }
 
 /* Responsive design */

@@ -526,9 +526,7 @@ p {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    /* Dark mode removed per user preference */
-}
+
 
 /* === FOCUS STYLES === */
 *:focus-visible {

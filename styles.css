@@ -140,7 +140,7 @@ body {
 .main-content {
     margin-left: 300px;
     padding: 3rem 4rem;
-    background-color: transparent;
+    background-color: var(--bg-secondary);
     min-height: 100vh;
     width: calc(100% - 300px);
 }

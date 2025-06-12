@@ -138,11 +138,21 @@ body {
 
 /* Main content */
 .main-content {
-    margin-left: 300px;
-    padding: 3rem 4rem;
-    background-color: var(--bg-primary);
-    min-height: 100vh;
-    width: calc(100% - 300px);
+  background-image:
+    /* white from left up to 1100px */
+    linear-gradient(
+      to right,
+      var(--bg-primary) 0,
+      var(--bg-primary) 1100px,
+      var(--bg-secondary) 1100px,
+      var(--bg-secondary) 100%
+    );
+  background-repeat: no-repeat;
+  /* keep your existing layout rules */
+  margin-left: 300px;
+  padding: 3rem 4rem;
+  width: calc(100% - 300px);
+  min-height: 100vh;
 }
 
 .content-section {

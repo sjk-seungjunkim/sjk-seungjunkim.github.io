@@ -79,12 +79,20 @@ section.active-section {
   width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50%;
     box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.profile-image .name {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
 }
 .profile-image .affiliation {
     margin-top: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-secondary);
     text-align: left;
 }

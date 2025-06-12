@@ -143,8 +143,8 @@ body {
     linear-gradient(
       to right,
       var(--bg-primary) 0,
-      var(--bg-primary) 1100px,
-      var(--bg-secondary) 1100px,
+      var(--bg-primary) 1200px,
+      var(--bg-secondary) 1200px,
       var(--bg-secondary) 100%
     );
   background-repeat: no-repeat;

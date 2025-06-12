@@ -143,12 +143,15 @@ body {
     background-color: var(--bg-primary);
     min-height: 100vh;
     width: calc(100% - 300px);
+    display: flex;
+    justify-content: center;
 }
 
 .content-section {
     display: none;
     width: 100%;
-    max-width: none;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .content-section.active-section {

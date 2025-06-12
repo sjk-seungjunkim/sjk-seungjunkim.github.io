@@ -148,9 +148,12 @@ body {
 .content-section {
     display: none;
     width: 100%;
-    background-color: var(--bg-primary); 
     max-width: 1100px;
+    background-color: var(--bg-primary);
+    padding: 3rem 4rem;                     /* Same padding as before */   
     margin-right: auto;
+    box-shadow: none;                       /* Remove any box shadows */
+    border: none; 
 }
 
 .content-section.active-section {

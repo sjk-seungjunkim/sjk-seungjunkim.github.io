@@ -1,219 +1,384 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seungjun Kim - Assistant Professor at KDI School of Public Policy and Management">
-    <meta name="author" content="Seungjun Kim">
-    <title>Seungjun Kim - Academic Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons (optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Top Header -->
-    <header class="top-header">
-        <div class="header-name">Seungjun Kim</div>
-        <nav class="sidebar-nav">
-            <ul class="nav-list">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#teaching" class="nav-link">Teaching</a></li>
-                <li><a href="#cv" class="nav-link">CV</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Academic Pages Inspired CSS */
+:root {
+    --text-primary: #494e52;
+    --text-secondary: #888;
+    --text-light: #666;
+    --link-color: #52adc8;
+    --link-hover: #337ab7;
+    --border-light: #e5e5e5;
+    --bg-primary: #fff;
+    --bg-secondary: #f5f5f5;
+    --bg-tertiary: #fafafa;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --transition-smooth: all 0.2s ease;
+    --font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+}
 
-    <div class="page-wrapper">
-        <!-- Profile Section -->
-        <aside class="sidebar">
-            <div class="author-profile">
-                <img src="profile.jpg" alt="Seungjun Kim" class="author-avatar">
-                <h1 class="author-name">Seungjun Kim</h1>
-                <p class="author-bio">Assistant Professor at KDI School of Public Policy and Management</p>
-                
-                <!-- Contact Links -->
-                <ul class="author-links">
-                    <li><a href="mailto:your.email@kdi.ac.kr"><i class="fas fa-envelope"></i> Email</a></li>
-                    <li><a href="#"><i class="fab fa-orcid"></i> ORCID</a></li>
-                    <li><a href="#"><i class="fab fa-google"></i> Google Scholar</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Office Location</a></li>
-                </ul>
-            </div>
-        </aside>
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Home/About Section -->
-            <section id="home" class="content-section active-section">
-                <div class="profile-header">
-                    <h1>About me</h1>
-                </div>
-                
-                <div class="profile-description">
-                    <p>Welcome! My name is Seungjun Kim and I am an Assistant Professor at KDI School of Public Policy and Management. My research examines the intersection of international political economy and foreign direct investment, with particular emphasis on government-business relationships, industrial policies, and geo-economic statecraft.</p>
-                    
-                    <p>My work contributes to understanding how these dynamics affect the liberal international order amid intensifying geo-economic competition. I am particularly interested in how states use economic tools to achieve strategic objectives and how multinational corporations navigate increasingly complex geo-economic landscapes.</p>
-                    
-                    <h2>Research Interests</h2>
-                    <ul>
-                        <li>International Political Economy</li>
-                        <li>Foreign Direct Investment</li>
-                        <li>Government-Business Relations</li>
-                        <li>Industrial Policy</li>
-                        <li>Geo-economic Statecraft</li>
-                    </ul>
-                </div>
-            </section>
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    margin: 0;
+}
 
-            <!-- Publications Section -->
-            <section id="publications" class="content-section">
-                <h1>Publications</h1>
-                
-                <div class="publication-item">
-                    <h3 class="publication-title">The Political Economy of Foreign Direct Investment in Strategic Industries</h3>
-                    <p class="publication-authors">Seungjun Kim</p>
-                    <p class="publication-venue"><em>International Organization, 2024</em></p>
-                    <p>This study examines how governments use FDI policies to advance strategic objectives in critical industries, analyzing the intersection of economic and security considerations in investment decisions.</p>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">Paper</a>
-                        <a href="#" class="publication-link">PDF</a>
-                        <a href="#" class="publication-link">Abstract</a>
-                    </div>
-                </div>
+/* Layout container */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+}
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Industrial Policy and Multinational Enterprise Strategy in Asia</h3>
-                    <p class="publication-authors">Seungjun Kim, Jane Doe</p>
-                    <p class="publication-venue"><em>Review of International Political Economy, 2023</em></p>
-                    <p>An analysis of how Asian governments' industrial policies influence multinational enterprise strategies and investment patterns in the region.</p>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">Paper</a>
-                        <a href="#" class="publication-link">PDF</a>
-                        <a href="#" class="publication-link">Replication</a>
-                    </div>
-                </div>
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background-color: var(--bg-primary);
+    padding: 2.5rem 1.5rem;
+    border-right: 1px solid var(--border-light);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Geo-economic Competition and Global Supply Chains</h3>
-                    <p class="publication-authors">Seungjun Kim, John Smith, Maria Garcia</p>
-                    <p class="publication-venue"><em>International Studies Quarterly, 2023</em></p>
-                    <p>This paper investigates how great power competition affects global supply chain configurations and multinational firm strategies.</p>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">Paper</a>
-                        <a href="#" class="publication-link">PDF</a>
-                        <a href="#" class="publication-link">Supplementary</a>
-                    </div>
-                </div>
+.author-profile {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 
-                <h2>Working Papers</h2>
-                
-                <div class="publication-item">
-                    <h3 class="publication-title">State Capitalism and Cross-Border Investment Patterns</h3>
-                    <p class="publication-authors">Seungjun Kim</p>
-                    <p class="publication-venue"><em>Under Review</em></p>
-                    <p>This working paper explores how different varieties of state capitalism influence patterns of cross-border investment and economic statecraft.</p>
-                    <div class="publication-links">
-                        <a href="#" class="publication-link">Draft</a>
-                    </div>
-                </div>
-            </section>
+.author-avatar {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
 
-            <!-- Teaching Section -->
-            <section id="teaching" class="content-section">
-                <h1>Teaching</h1>
-                
-                <div class="teaching-item">
-                    <h3 class="course-title">International Political Economy</h3>
-                    <p class="course-info">Graduate Course • Fall 2024</p>
-                    <p>This graduate seminar examines the intersection of politics and economics in the international system, covering trade, finance, development, and global governance institutions. Students engage with both theoretical frameworks and contemporary policy challenges.</p>
-                </div>
+.author-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
 
-                <div class="teaching-item">
-                    <h3 class="course-title">Global Economic Policy</h3>
-                    <p class="course-info">Undergraduate Course • Spring 2024</p>
-                    <p>An introduction to major economic policy issues in the global economy, including international trade, monetary systems, development strategies, and economic integration. Emphasis on policy analysis and real-world applications.</p>
-                </div>
+.author-bio {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
 
-                <div class="teaching-item">
-                    <h3 class="course-title">Foreign Direct Investment and Development</h3>
-                    <p class="course-info">Graduate Course • Fall 2023</p>
-                    <p>Advanced seminar examining the role of foreign direct investment in economic development, covering theoretical perspectives, empirical evidence, and policy implications for developing and developed countries.</p>
-                </div>
+.author-links {
+    list-style: none;
+    padding: 0;
+}
 
-                <div class="teaching-item">
-                    <h3 class="course-title">Research Methods in Political Economy</h3>
-                    <p class="course-info">Graduate Course • Spring 2023</p>
-                    <p>Introduction to quantitative and qualitative research methods in political economy, including research design, data collection, statistical analysis, and academic writing. Hands-on training with statistical software.</p>
-                </div>
-            </section>
+.author-links li {
+    margin-bottom: 0.5rem;
+}
 
-            <!-- CV Section -->
-            <section id="cv" class="content-section">
-                <h1>Curriculum Vitae</h1>
-                
-                <h2>Education</h2>
-                <div class="publication-item">
-                    <h3 class="publication-title">Ph.D. in Political Science</h3>
-                    <p class="publication-authors">University Name, 2020</p>
-                    <p>Dissertation: "Government-Business Relations and Foreign Investment Policy"</p>
-                </div>
+.author-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+    transition: var(--transition-smooth);
+}
 
-                <div class="publication-item">
-                    <h3 class="publication-title">M.A. in International Relations</h3>
-                    <p class="publication-authors">University Name, 2015</p>
-                </div>
+.author-links a:hover {
+    color: var(--link-color);
+}
 
-                <h2>Professional Experience</h2>
-                <div class="publication-item">
-                    <h3 class="publication-title">Assistant Professor</h3>
-                    <p class="publication-authors">KDI School of Public Policy and Management, 2021-Present</p>
-                </div>
+.author-links i {
+    margin-right: 0.5rem;
+    width: 16px;
+}
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Postdoctoral Fellow</h3>
-                    <p class="publication-authors">Research Institution, 2020-2021</p>
-                </div>
+/* Navigation */
+.sidebar-nav {
+    border-top: 1px solid var(--border-light);
+    padding-top: 1.5rem;
+}
 
-                <div class="publication-links">
-                    <a href="#" class="publication-link">Download Full CV (PDF)</a>
-                </div>
-            </section>
-        </main>
-    </div>
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <p>&copy; 2025 Seungjun Kim • Last updated: June 2025</p>
-    </footer>
+.nav-list li {
+    margin-bottom: 0.5rem;
+}
 
-    <script>
-        // Simple navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.content-section');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    // Remove active class from all links and sections
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    sections.forEach(s => s.classList.remove('active-section'));
-                    
-                    // Add active class to clicked link
-                    this.classList.add('active');
-                    
-                    // Show corresponding section
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.classList.add('active-section');
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+.nav-list a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    display: block;
+    transition: var(--transition-smooth);
+    border-left: 3px solid transparent;
+    padding-left: 0.75rem;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    color: var(--link-color);
+    border-left-color: var(--link-color);
+}
+
+/* Main content */
+.main-content {
+    margin-left: 300px;
+    padding: 3rem 4rem;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    width: calc(100% - 300px);
+    display: flex;
+    justify-content: center;
+}
+
+.content-section {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-section.active-section {
+    display: block;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem 0;
+    color: var(--text-primary);
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: var(--text-primary);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Profile section (home page) */
+.profile-header {
+    margin-bottom: 3rem;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+.profile-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.profile-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* Publications and Teaching lists */
+.publication-item,
+.teaching-item {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    background-color: var(--bg-tertiary);
+    transition: var(--transition-smooth);
+}
+
+.publication-item:hover,
+.teaching-item:hover {
+    box-shadow: 0 4px 12px var(--shadow-light);
+    border-color: var(--link-color);
+}
+
+.publication-title,
+.course-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.publication-authors,
+.course-info {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.publication-venue {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.publication-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+.publication-link:hover {
+    background-color: var(--link-color);
+    color: white;
+}
+
+/* Footer */
+.site-footer {
+    margin-left: 300px;
+    padding: 2rem 4rem;
+    background-color: var(--bg-tertiary);
+    border-top: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-align: center;
+    width: calc(100% - 300px);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+    
+    .main-content,
+    .site-footer {
+        margin-left: 250px;
+        padding: 2rem 2.5rem;
+        width: calc(100% - 250px);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+        padding: 1.5rem;
+    }
+    
+    .author-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .main-content,
+    .site-footer {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-header h1 {
+        font-size: 2rem;
+    }
+    
+    .publication-item,
+    .teaching-item {
+        padding: 1rem;
+    }
+    
+    .publication-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content,
+    .site-footer {
+        padding: 1rem 0.75rem;
+        width: 100%;
+    }
+    
+    .author-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-header h1 {
+        font-size: 1.7rem;
+    }
+    
+    .profile-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content,
+    .site-footer {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    
+    .publication-item,
+    .teaching-item {
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+}

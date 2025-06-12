@@ -142,12 +142,13 @@ body {
     padding: 2rem 3rem;
     background-color: var(--bg-primary);
     min-height: 100vh;
-    max-width: calc(100% - 300px);
+    width: calc(100% - 300px);
 }
 
 .content-section {
     display: none;
-    max-width: 800px;
+    width: 100%;
+    max-width: none;
 }
 
 .content-section.active-section {
@@ -277,6 +278,7 @@ p {
     color: var(--text-secondary);
     font-size: 0.9rem;
     text-align: center;
+    width: calc(100% - 300px);
 }
 
 /* Responsive design */
@@ -289,6 +291,7 @@ p {
     .site-footer {
         margin-left: 250px;
         padding: 1.5rem 2rem;
+        width: calc(100% - 250px);
     }
 }
 
@@ -340,6 +343,7 @@ p {
     .main-content,
     .site-footer {
         padding: 1rem 0.75rem;
+        width: 100%;
     }
     
     .author-avatar {

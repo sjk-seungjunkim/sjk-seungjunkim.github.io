@@ -521,10 +521,7 @@ body {
 .main-content {
     margin-left: 300px;
     padding: 3rem 4rem;
-    background: linear-gradient(to right, 
-        var(--bg-primary) 1100px,     /* White up to 1100px */
-        var(--bg-secondary) 1100px    /* Gray after 1100px */
-    );
+    background-color: var(--bg-primary);
     min-height: 100vh;
     width: calc(100% - 300px);
 }

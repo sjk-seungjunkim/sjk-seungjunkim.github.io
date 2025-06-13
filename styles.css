@@ -14,7 +14,7 @@
     --font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* General styles */
+/* Reset & base styles */
 * {
     margin: 0;
     padding: 0;
@@ -29,20 +29,24 @@ body {
     margin: 0;
 }
 
-/* Layout container */
+/* Center the entire layout */
 .page-wrapper {
-    min-height: 100vh;
     display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    max-width: 1400px;    /* 300px sidebar + 1100px content */
+    margin: 0 auto;
 }
 
 /* Sidebar */
 .sidebar {
     width: 300px;
+    flex-shrink: 0;
+    position: static;     /* no longer fixed */
+    height: auto;
     background-color: var(--bg-primary);
     padding: 2rem 1.5rem;
     border-right: 1px solid var(--border-light);
-    position: fixed;
-    height: 100vh;
     overflow-y: auto;
 }
 
@@ -103,7 +107,6 @@ body {
     width: 16px;
 }
 
-/* Navigation */
 .sidebar-nav {
     border-top: 1px solid var(--border-light);
     padding-top: 1.5rem;
@@ -136,25 +139,16 @@ body {
     border-left-color: var(--link-color);
 }
 
-/* Main content */
+/* Main content area */
 .main-content {
-  background-image:
-    /* white from left up to 1100px */
-    linear-gradient(
-      to right,
-      var(--bg-primary) 0,
-      var(--bg-primary) 900px,
-      var(--bg-secondary) 900px,
-      var(--bg-secondary) 100%
-    );
-  background-repeat: no-repeat;
-  /* keep your existing layout rules */
-  margin-left: 300px;
-  padding: 3rem 4rem;
-  width: calc(100% - 300px);
-  min-height: 100vh;
+    flex: 1;
+    max-width: 1100px;
+    background-color: var(--bg-primary);
+    padding: 3rem 4rem;
+    min-height: 100vh;
 }
 
+/* Sections */
 .content-section {
     display: none;
     width: 100%;
@@ -194,7 +188,7 @@ p {
     line-height: 1.7;
 }
 
-/* Profile section (home page) */
+/* Profile/About */
 .profile-header {
     margin-bottom: 2rem;
 }
@@ -219,13 +213,10 @@ p {
     color: var(--text-primary);
 }
 
-/* Publications and Teaching lists */
+/* Publications & Teaching */
 .publication-item,
 .teaching-item {
     margin-bottom: 1.5rem;
-    padding: 0;
-    border: none;
-    border-radius: 0;
     background-color: transparent;
     transition: none;
 }
@@ -281,14 +272,14 @@ p {
 
 /* Footer */
 .site-footer {
-    margin-left: 300px;
-    padding: 2rem 4rem;
     background-color: var(--bg-tertiary);
     border-top: 1px solid var(--border-light);
     color: var(--text-secondary);
     font-size: 0.9rem;
     text-align: center;
-    width: calc(100% - 300px);
+    padding: 2rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* Responsive design */
@@ -296,57 +287,38 @@ p {
     .sidebar {
         width: 250px;
     }
-    
-    .main-content,
-    .site-footer {
-        margin-left: 250px;
-        padding: 2rem 2.5rem;
-        width: calc(100% - 250px);
-    }
+    /* wrapper remains centered; content will shrink naturally */
 }
 
 @media (max-width: 768px) {
     .page-wrapper {
         flex-direction: column;
+        max-width: 100%;
     }
-    
     .sidebar {
         width: 100%;
-        height: auto;
         position: static;
         border-right: none;
         border-bottom: 1px solid var(--border-light);
         padding: 1.5rem;
     }
-    
     .author-avatar {
         width: 120px;
         height: 120px;
     }
-    
-    .main-content,
-    .site-footer {
-        margin-left: 0;
+    .main-content {
+        max-width: 100%;
         padding: 2rem 1.5rem;
-        width: 100%;
     }
-    
+    .site-footer {
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
     h1 {
         font-size: 1.8rem;
     }
-    
     .profile-header h1 {
         font-size: 2rem;
-    }
-    
-    .publication-item,
-    .teaching-item {
-        padding: 0;
-    }
-    
-    .publication-links {
-        flex-direction: column;
-        align-items: flex-start;
     }
 }
 
@@ -354,18 +326,14 @@ p {
     .main-content,
     .site-footer {
         padding: 1rem 0.75rem;
-        width: 100%;
     }
-    
     .author-avatar {
         width: 100px;
         height: 100px;
     }
-    
     .profile-header h1 {
         font-size: 1.7rem;
     }
-    
     .profile-subtitle {
         font-size: 1.1rem;
     }
@@ -376,17 +344,15 @@ p {
     .sidebar {
         display: none;
     }
-    
     .main-content,
     .site-footer {
-        margin-left: 0;
         max-width: 100%;
         width: 100%;
     }
-    
     .publication-item,
     .teaching-item {
         border: 1px solid #ddd;
         break-inside: avoid;
     }
 }
+

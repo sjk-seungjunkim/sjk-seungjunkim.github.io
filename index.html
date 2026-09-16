@@ -3,194 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seungjun Kim - Assistant Professor at KDI School of Public Policy and Management">
+    <meta name="description" content="Seungjun Kim — Assistant Professor at KDI School of Public Policy and Management. International political economy, foreign direct investment, industrial policy.">
     <meta name="author" content="Seungjun Kim">
-    <title>Seungjun Kim </title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons (optional) -->
+    <title>Seungjun Kim</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="page">
+
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="author-profile">
-                <img src="profile.jpg" alt="Seungjun Kim" class="author-avatar">
-                <h2 class="author-name">Seungjun Kim</h2>
-                <p class="author-bio">Assistant Professor at KDI School of Public Policy and Management</p>
-                
-                <!-- Contact Links -->
-                <ul class="author-links">
-                    <li><a href="mailto:sjk@kdi.ac.kr"><i class="fas fa-envelope"></i> Email</a></li>
-                    <li><a href="https://scholar.google.ru/citations?user=cWSZE5QAAAAJ&hl=en"><i class="fab fa-google"></i> Google Scholar</a></li>
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Sejong, South Korea</a></li>
+            <div class="profile">
+                <img src="profile.jpg" alt="Portrait of Seungjun Kim" class="profile-photo">
+                <h1 class="profile-name">Seungjun Kim</h1>
+                <p class="profile-title">Assistant Professor<br>KDI School of Public Policy and Management</p>
+
+                <ul class="profile-links">
+                    <li><a href="mailto:sjk@kdi.ac.kr"><i class="fas fa-envelope" aria-hidden="true"></i>sjk@kdi.ac.kr</a></li>
+                    <li><a href="https://scholar.google.ru/citations?user=cWSZE5QAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a></li>
+                    <li><span><i class="fas fa-map-marker-alt" aria-hidden="true"></i>Sejong, South Korea</span></li>
                 </ul>
             </div>
-            
-            <!-- Navigation -->
-            <nav class="sidebar-nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#publications" class="nav-link">Publications</a></li>
-                    <li><a href="#teaching" class="nav-link">Teaching</a></li>
-                    <li><a href="#cv" class="nav-link">CV</a></li>
-                </ul>
+
+            <nav class="site-nav" aria-label="Site sections">
+                <a href="#home" class="nav-link active">About</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#teaching" class="nav-link">Teaching</a>
+                <a href="#cv" class="nav-link">CV</a>
             </nav>
         </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Home/About Section -->
-            <section id="home" class="content-section active-section">
-                <div class="profile-header">
-                    <h1>About me</h1>
-                </div>
-                
-                <div class="profile-description">
-                    <p>Welcome! My name is Seungjun Kim and I am an Assistant Professor at KDI School of Public Policy and Management. My research examines the intersection of international political economy and foreign direct investment, with particular emphasis on government-business relationships, industrial policies, and geo-economic statecraft.</p>
-                    
-                    <p>My work contributes to understanding how these dynamics affect the liberal international order amid intensifying geo-economic competition.</p>
-                    
-                    <h2>Research Interests</h2>
-                    <ul>
-                        <li>International Political Economy</li>
-                        <li>Foreign Direct Investment</li>
-                        <li>Government-Business Relations</li>
-                        <li>Industrial Policy</li>
-                        <li>Geo-economic Statecraft</li>
-                    </ul>
-                </div>
+        <!-- Main content -->
+        <main class="content">
+
+            <!-- About -->
+            <section id="home" class="section active-section">
+                <p class="lede">I am an Assistant Professor at KDI School of Public Policy and Management. My research examines the intersection of international political economy and foreign direct investment, with particular emphasis on government-business relationships, industrial policies, and geo-economic statecraft.</p>
+
+                <p>My work contributes to understanding how these dynamics affect the liberal international order amid intensifying geo-economic competition.</p>
+
+                <h2>Research interests</h2>
+                <ul class="interests">
+                    <li>International political economy</li>
+                    <li>Foreign direct investment</li>
+                    <li>Government–business relations</li>
+                    <li>Industrial policy</li>
+                    <li>Geo-economic statecraft</li>
+                </ul>
             </section>
 
-            <!-- Publications Section -->
-            <section id="publications" class="content-section">
-                <h1>Publications</h1>
+            <!-- Publications -->
+            <section id="publications" class="section">
+                <h2 class="section-heading">Publications</h2>
 
-                    <div class="publication-item">
-                    <h3 class="publication-title">Paying Taxes for Favor: The Deterring Effects of Industrial Policies on Innovation in South Korea</h3>
-                    <p class="publication-authors">Seungjun Kim and Syungjin Han</p>
-                    <p class="publication-venue"> <em>Socio-Economic Review, Forthcoming</em> <a href="https://academic.oup.com/ser/advance-article/doi/10.1093/ser/mwaf049/8239075" class="publication-link">Paper</a></p>
-                </div>
-                
-                <div class="publication-item">
-                    <h3 class="publication-title">Are foreign stock investors politically responsive? Evidence from the 2012 South Korean presidential election</h3>
-                    <p class="publication-authors">Seungjun Kim</p>
-                    <p class="publication-venue"><em>New Political Economy, 2025</em> <a href="https://www.tandfonline.com/doi/abs/10.1080/13563467.2025.2504396" class="publication-link">Paper</a></p>                     
-                     </div>
+                <ol class="pub-list">
+                    <li class="pub">
+                        <span class="pub-year">Forthcoming</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Paying Taxes for Favor: The Deterring Effects of Industrial Policies on Innovation in South Korea</h3>
+                            <p class="pub-authors">Seungjun Kim and Syungjin Han</p>
+                            <p class="pub-venue"><em>Socio-Economic Review</em></p>
+                            <a href="https://academic.oup.com/ser/advance-article/doi/10.1093/ser/mwaf049/8239075" class="pub-link" target="_blank" rel="noopener">Read paper</a>
+                        </div>
+                    </li>
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Personal networks, state financial backing, and foreign direct investment</h3>
-                    <p class="publication-authors">Seungjun Kim</p>
-                    <p class="publication-venue"><em>Comparative Political Studies, 2023</em> <a href="https://journals.sagepub.com/doi/pdf/10.1177/00104140221139382" class="publication-link">Paper</a></p>
-                                 </div>
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Are foreign stock investors politically responsive? Evidence from the 2012 South Korean presidential election</h3>
+                            <p class="pub-authors">Seungjun Kim</p>
+                            <p class="pub-venue"><em>New Political Economy</em></p>
+                            <a href="https://www.tandfonline.com/doi/abs/10.1080/13563467.2025.2504396" class="pub-link" target="_blank" rel="noopener">Read paper</a>
+                        </div>
+                    </li>
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Protecting home: How firms' investment plans affect the formation of bilateral investment treaties</h3>
-                    <p class="publication-authors">Seungjun Kim</p>
-                    <p class="publication-venue"><em>The Review of International Organizations, 2023</em> <a href="https://link.springer.com/article/10.1007/s11558-023-09486-4" class="publication-link">Paper</a></p>
-                                   </div>
+                    <li class="pub">
+                        <span class="pub-year">2023</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Personal networks, state financial backing, and foreign direct investment</h3>
+                            <p class="pub-authors">Seungjun Kim</p>
+                            <p class="pub-venue"><em>Comparative Political Studies</em></p>
+                            <a href="https://journals.sagepub.com/doi/pdf/10.1177/00104140221139382" class="pub-link" target="_blank" rel="noopener">Read paper</a>
+                        </div>
+                    </li>
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Examining political connections to study institutional change: Evidence from two unexpected election outcomes in South Korea</h3>
-                    <p class="publication-authors">Kai J&auml;ger, Seungjun Kim</p>
-                    <p class="publication-venue"><em>The World Economy, 2019</em> <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/twec.12755" class="publication-link">Paper</a></p>
-                    </div>
+                    <li class="pub">
+                        <span class="pub-year">2023</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Protecting home: How firms' investment plans affect the formation of bilateral investment treaties</h3>
+                            <p class="pub-authors">Seungjun Kim</p>
+                            <p class="pub-venue"><em>The Review of International Organizations</em></p>
+                            <a href="https://link.springer.com/article/10.1007/s11558-023-09486-4" class="pub-link" target="_blank" rel="noopener">Read paper</a>
+                        </div>
+                    </li>
 
-                <h2>Working Papers</h2>
+                    <li class="pub">
+                        <span class="pub-year">2019</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Examining political connections to study institutional change: Evidence from two unexpected election outcomes in South Korea</h3>
+                            <p class="pub-authors">Kai J&auml;ger and Seungjun Kim</p>
+                            <p class="pub-venue"><em>The World Economy</em></p>
+                            <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/twec.12755" class="pub-link" target="_blank" rel="noopener">Read paper</a>
+                        </div>
+                    </li>
+                </ol>
 
-                <div class="publication-item">
-                    <h3 class="publication-title">Do Jobs Created by Foreign Firms Decrease Support for an Anti-Globalization Politician?</h3>
-                    <p class="publication-authors">ByungKoo Kim, Seungjun Kim, and Jong Hee Park</p>
-                    <p class="publication-venue"> <em>Revise and Resubmit at British Journal of Political Science</em></p>
-                </div>
+                <h2 class="section-heading">Working papers</h2>
 
-                 <div class="publication-item">
-                    <h3 class="publication-title">When Working Harder Leads to Worse Results: Traps and Alternatives in Organizational Accountability and Performance</h3>
-                    <p class="publication-authors">Junesoo Lee and Seungjun Kim</p>
-                    <p class="publication-venue"> <em>Under Review, 2025</em></p>
-                </div>
-                
-                <div class="publication-item">
-                    <h3 class="publication-title">Do New Roads Trump Loyalty?: Infrastructure Conditions, Federal Spending, and Voter Behavior in the 2022 House Elections</h3>
-                    <p class="publication-authors">Stefano Jud, ByungKoo Kim, Seungjun Kim, and Jong Hee Park</p>
-                    <p class="publication-venue"> <em>Working Paper, 2025</em></p>
-                </div>
+                <ol class="pub-list">
+                    <li class="pub">
+                        <span class="pub-year">R&amp;R</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Do Jobs Created by Foreign Firms Decrease Support for an Anti-Globalization Politician?</h3>
+                            <p class="pub-authors">ByungKoo Kim, Seungjun Kim, and Jong Hee Park</p>
+                            <p class="pub-venue">Revise and resubmit, <em>British Journal of Political Science</em></p>
+                        </div>
+                    </li>
 
-                 <div class="publication-item">
-                    <h3 class="publication-title">Foreign Direct Investment, Outsourcing Investor Protection, and the Role of Information Quality</h3>
-                    <p class="publication-authors">Rebecca N. Hann, Heedong Kim, Seungjun Kim and Viktoriya Zotova</p>
-                    <p class="publication-venue"> <em>Working Paper, 2025</em></p>
-                       <p class="publication-venue"> <em>- Winner of the Outstanding Paper Award at the 2022 International Accounting Section Midyear Meeting</em></p>
-                </div>
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">When Working Harder Leads to Worse Results: Traps and Alternatives in Organizational Accountability and Performance</h3>
+                            <p class="pub-authors">Junesoo Lee and Seungjun Kim</p>
+                            <p class="pub-venue">Under review</p>
+                        </div>
+                    </li>
 
-                   <div class="publication-item">
-                    <h3 class="publication-title">Mega-Project Crisis Vulnerability: Analyses of BRI Initiatives and UN Voting Patterns, 2000-2019</h3>
-                    <p class="publication-authors">Soyeon Shin and Seungjun Kim</p>
-                    <p class="publication-venue"> <em>Working Paper, 2025</em></p>
-                </div>
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Do New Roads Trump Loyalty? Infrastructure Conditions, Federal Spending, and Voter Behavior in the 2022 House Elections</h3>
+                            <p class="pub-authors">Stefano Jud, ByungKoo Kim, Seungjun Kim, and Jong Hee Park</p>
+                            <p class="pub-venue">Working paper</p>
+                        </div>
+                    </li>
+
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Foreign Direct Investment, Outsourcing Investor Protection, and the Role of Information Quality</h3>
+                            <p class="pub-authors">Rebecca N. Hann, Heedong Kim, Seungjun Kim, and Viktoriya Zotova</p>
+                            <p class="pub-venue">Working paper</p>
+                            <p class="pub-award"><i class="fas fa-award" aria-hidden="true"></i>Outstanding Paper Award, 2022 International Accounting Section Midyear Meeting</p>
+                        </div>
+                    </li>
+
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div class="pub-body">
+                            <h3 class="pub-title">Mega-Project Crisis Vulnerability: Analyses of BRI Initiatives and UN Voting Patterns, 2000–2019</h3>
+                            <p class="pub-authors">Soyeon Shin and Seungjun Kim</p>
+                            <p class="pub-venue">Working paper</p>
+                        </div>
+                    </li>
+                </ol>
             </section>
 
-            <!-- Teaching Section -->
-            <section id="teaching" class="content-section">
-                <h1>Teaching</h1>
-                
-                <div class="teaching-item">
-                    <h3 class="course-title">Politics of Global Economy</h3>
-                    <p class="course-info">Graduate Course</p>
-                </div>
+            <!-- Teaching -->
+            <section id="teaching" class="section">
+                <h2 class="section-heading">Teaching</h2>
+                <p class="section-intro">Graduate courses at KDI School of Public Policy and Management.</p>
 
-                <div class="teaching-item">
-                    <h3 class="course-title">Theories of International Relations</h3>
-                    <p class="course-info">Graduate Course</p>
-                </div>
-
-                <div class="teaching-item">
-                    <h3 class="course-title">War, Peace, and Politics</h3>
-                    <p class="course-info">Graduate Course</p>
-                </div>
+                <ul class="course-list">
+                    <li class="course">
+                        <h3 class="course-title">Politics of Global Economy</h3>
+                        <p class="course-level">Graduate course</p>
+                    </li>
+                    <li class="course">
+                        <h3 class="course-title">Theories of International Relations</h3>
+                        <p class="course-level">Graduate course</p>
+                    </li>
+                    <li class="course">
+                        <h3 class="course-title">War, Peace, and Politics</h3>
+                        <p class="course-level">Graduate course</p>
+                    </li>
+                </ul>
             </section>
 
-            <!-- CV Section -->
-            <section id="cv" class="content-section">
-                <h1>Curriculum Vitae</h1>
-                <div class="publication-links">
-                    <a href="https://drive.google.com/file/d/1OGQWt5crZZbMLpifZFGbmSp1ErpIS3I5/view?usp=share_link" class="publication-link">Download Full CV (PDF)</a>
-                </div>
+            <!-- CV -->
+            <section id="cv" class="section">
+                <h2 class="section-heading">Curriculum vitae</h2>
+                <p class="section-intro">A full record of appointments, publications, grants, and service.</p>
+                <a href="https://drive.google.com/file/d/1OGQWt5crZZbMLpifZFGbmSp1ErpIS3I5/view?usp=share_link" class="button" target="_blank" rel="noopener">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>Download CV (PDF)
+                </a>
             </section>
+
+            <footer class="site-footer">
+                <p>&copy; 2026 Seungjun Kim &nbsp;&middot;&nbsp; Last updated September 2026</p>
+            </footer>
         </main>
     </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <p>&copy; 2025 Seungjun Kim • Last updated: Oct 2025</p>
-    </footer>
-
     <script>
-        // Simple navigation functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.content-section');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+        (function () {
+            const links = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            function show(id) {
+                let found = false;
+                sections.forEach(s => {
+                    const on = s.id === id;
+                    s.classList.toggle('active-section', on);
+                    if (on) found = true;
+                });
+                if (!found) return show('home');
+                links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+                window.scrollTo({ top: 0 });
+            }
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
-                    // Remove active class from all links and sections
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    sections.forEach(s => s.classList.remove('active-section'));
-                    
-                    // Add active class to clicked link
-                    this.classList.add('active');
-                    
-                    // Show corresponding section
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        targetSection.classList.add('active-section');
-                    }
+                    const id = this.getAttribute('href').slice(1);
+                    history.pushState(null, '', '#' + id);
+                    show(id);
                 });
             });
-        });
+
+            window.addEventListener('popstate', () => show(location.hash.slice(1) || 'home'));
+            show(location.hash.slice(1) || 'home');
+        })();
     </script>
 </body>
 </html>
